@@ -11,7 +11,7 @@ def words_in_both(first_sentence, second_sentence):
     """
     first_words = first_sentence.lower().split(" ")
     second_words = second_sentence.lower().split(" ")
-    same_words = []
+    same_words = set()
     for word in first_words:
         if (word in second_sentence) and (word not in same_words):
             same_words.append(word)
